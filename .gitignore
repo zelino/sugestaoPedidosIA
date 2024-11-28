@@ -1,0 +1,10 @@
+contas.py
+*.rar
+*.xls
+*.xlsx
+*.env
+*.csv
+*.db
+*CONTAS/
+*venv/
+*.venv/
