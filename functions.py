@@ -31,15 +31,6 @@ client_groq = ChatGroq(
 pd.set_option("styler.render.max_elements", 7794324)
 
 
-# Configurações de conexão
-HOST = '10.5.5.22'
-PORT = 1434
-DATABASE = 'DW_Softec'
-USER_BD = 'sa'
-PASSWORD_BD = 'pm6e24X7Q^3x'
-DRIVER = 'ODBC Driver 17 for SQL Server'
-
-
 def get_connection():
     """Estabelece a conexão com o banco de dados."""
     engine = create_engine(f'mssql+pyodbc://{USER_BD}:{PASSWORD_BD}@{HOST}:{PORT}/{DATABASE}?driver={DRIVER}')
